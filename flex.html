@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.grid{
+    padding: 1rem;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+ p{
+ padding: 1rem;
+ margin: 0;
+ border: 2px solid #000000;
+ background-color: #ffcccc;
+ }
+
+@media only screen and (max-width:620px) {
+    p{
+        background-color: #425262;
+        color: #000000;
+    }
+}
+
+p.col-third {
+    flex-basis: 33.33%
+}
+p.col-twothirds {
+    flex-basis: 66.66%
+}
+
+</style>
+</head>
+<body>
+    <div class="grid">
+        <p class="col-third">item one</p>
+        <p class="col-twothirds">item two</p>
+    </div>
+</body>
+</html>
